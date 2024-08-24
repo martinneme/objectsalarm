@@ -58,7 +58,7 @@ export default function Home() {
     </div>
   </div>
   <div className="bg-white shadow-lg rounded-lg p-6 closeCardInfo">
-        <h3 className="text-xl text-description  font-semibold mb-4">No dejes que la preocupación por perder tus cosas arruine tu día. </h3>
+        <h3 className="text-xl text-description  font-semibold mb-4">No dejes que la preocupación por perder tus cosas arruine tu día </h3>
         <h3>¡Conseguí tu localizador de objetos y mantene tus pertenencias siempre a tu alcance!</h3>
       </div>
 </section>
