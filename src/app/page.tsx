@@ -48,7 +48,7 @@ export default function Home() {
         <p className="text-gray-700">Si el objeto se aleja más allá de una distancia segura, el dispositivo emite una alerta sonora instantánea, avisándote al momento y permitiéndote actuar antes de que sea demasiado tarde. </p>
       </div>
       <div className="bg-white shadow-lg rounded-lg p-6">
-        <h3 className="text-xl  text-description font-semibold mb-4">Versátil y Fácil de Usar 3</h3>
+        <h3 className="text-xl  text-description font-semibold mb-4">Versátil y Fácil de Usar</h3>
         <p className="text-gray-700">Ideal para proteger tus pertenencias en cualquier situación: cuando viajas, en el trabajo, o incluso en casa. Con un diseño intuitivo, basta con encender ambos dispositivos para que funcionen automáticamente.</p>
       </div>
       <div className="bg-white shadow-lg rounded-lg p-6">
