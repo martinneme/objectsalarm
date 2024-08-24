@@ -17,13 +17,14 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    rgba(0, 0, 0, 0.9), 
+    rgb(30 3 47)
+  );
+  color: #fff; 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; 
 }
 
 @layer utilities {
@@ -31,3 +32,318 @@ body {
     text-wrap: balance;
   }
 }
+
+@media (max-width: 768px) { 
+  .centerPage {
+    flex-direction: column; 
+  }
+
+  .slider-section{
+    height: 15rem;
+  }
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.section-title {
+  text-align: center;
+  padding: 32px 0; 
+  color:#ffffff
+
+}
+
+.section-title h1 {
+  font-size: 2.25rem; 
+  font-weight: 700; 
+  margin-bottom: 16px; 
+}
+
+.section-title p {
+  font-size: 1.125rem; 
+  margin-bottom: 32px; 
+}
+
+.slider-section {
+  width: 100%;
+  max-width: 32rem;
+  margin: 0 auto; 
+  margin-bottom: 32px; 
+ 
+
+}
+
+.purchase-button {
+  margin-bottom: 32px; 
+}
+
+.contact-section {
+  text-align: center;
+  padding: 32px 0; 
+  border-top: 1px solid #e5e7eb; 
+  width: 100%;
+  color: #ffffff;
+}
+
+.contact-section h2 {
+  font-size: 1.5rem; 
+  font-weight: 700; 
+  margin-bottom: 16px; 
+}
+
+.contact-section p {
+  font-size: 1.125rem; 
+  margin-bottom: 8px; 
+}
+
+.buttonGraf {
+
+  background-color: #8c2ae7; 
+  color: #f3f3f3;
+  padding: 12px 24px; 
+  font-size: 1rem; 
+  border: none; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.buttonGraf:hover {
+  background-color: #f3f3f3; 
+  color: #8c2ae7; 
+}
+
+
+.slider-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 20px;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: transparent;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8; 
+  transition: opacity 0.5s ease; 
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+
+.slider::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.slider button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slider button.left {
+  left: 10px;
+}
+
+.slider button.right {
+  right: 10px;
+}
+
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #555555;
+  transform: translateY(-2px);
+}
+
+
+.contact-button.whatsapp {
+  background-color: #25D366; 
+}
+
+.contact-button.whatsapp:hover {
+  background-color: #128C7E;
+}
+
+.contact-button.facebook {
+  background-color: #3b5998;
+}
+
+.contact-button.facebook:hover {
+  background-color: #2d4373;
+}
+
+.contact-button.twitter {
+  background-color: #1DA1F2; 
+}
+
+.contact-button.twitter:hover {
+  background-color: #1A91DA;
+}
+
+.contact-button.email {
+  background-color: #DD4B39; 
+}
+
+.contact-button.email:hover {
+  background-color: #C1351D;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.modalTitle,.labelPay{
+  color: #333333;
+}
+
+
+.labelPay{
+  font-size: small;
+}
+
+
+.CardPanel{
+  display: flex;
+  gap: 10px;
+}
+
+.CardPanel input{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+section .document{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+div.svelte-1tw6ms1 {
+  display: flex;
+  border: var(--input-border-width) solid var(--outline-primary-color);
+  border-radius: var(--border-radius-medium);
+  box-sizing: border-box;
+  min-height: var(--input-min-height);
+  background-color: var(--input-background-color);
+}
+
+select,.buttonClose{
+  padding: 10px;
+  border: 2px solid  #d1cdcd;
+  border-radius: 4px; 
+  background-color: #ffffff; 
+  color: #333; 
+  appearance: none; 
+}
+
+.buttonClose{
+  border: none;
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  color: #d1cdcd;
+  }
+
+  .payButton{
+    background-image: linear-gradient(90deg, var(--base-color) 0%, var(--base-color) 50%, var(--base-color-second-variant) 50%, var(--base-color-second-variant) 100%);
+    background-size: 200%;
+    transition: background-position 2s cubic-bezier(0.47, 0.1, 1, 0.63), color 0.5s linear;
+    transition-delay: 0s, 0.25s;
+    color: var(--button-text-color);
+    border: none;
+    cursor: pointer;
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-semi-bold);
+    font-family: inherit;
+    padding: var(--button-padding);
+    width: 40%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: var(--form-inputs-text-transform);
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+
+  .centerPage{
+    display: flex;
+    width: 80%;
+  }
+
+  .slogan p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
