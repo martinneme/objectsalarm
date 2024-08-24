@@ -24,7 +24,7 @@ export default function Home() {
       </section>
       <section className="centerPage">
         <div className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pb-24 lg:pt-48 ">
-        <h1 className="mb4 text-4xl font-bold uppercase text-white sm:text-5xl md:mb-8 md:text-6xl ">OBJETS ALARM</h1>
+        <h1 className="mb4 text-4xl font-bold uppercase text-white sm:text-5xl md:mb-8 md:text-6xl ">OBJECTS ALARM</h1>
         <p className="max-w-md leading-relaxed text-white-500 xl:text-lg"><b>Mantene tus objetos seguros y a la vista</b> </p> 
         <p> Evita olvidos y posibles hurtos con una sola solución</p>
    
