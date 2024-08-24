@@ -120,6 +120,22 @@ body {
   color: #8c2ae7; 
 }
 
+.text-description{
+  color: #333333;
+}
+
+
+.closeCardInfo{
+  margin-top: 2%;
+  background-color: transparent;
+  text-align: center;
+}
+
+.closeCardInfo h3{
+  color:#f3f3f3; 
+  width: 80%;
+  margin: auto;
+}
 
 .slider-container {
   width: 100%;
